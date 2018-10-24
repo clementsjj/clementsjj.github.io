@@ -1,0 +1,9 @@
+.icon {
+    transition: transform .2s; /* Animation */
+    filter: grayscale(100%);
+}
+
+.icon:hover {
+    transform: scale(1.5);
+    filter: grayscale(20%);
+}
