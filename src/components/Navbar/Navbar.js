@@ -52,7 +52,9 @@ class Navbar extends Component {
               color="inherit"
               className={classes.grow}
             >
-              The Internet Home of {'<JJ_Clements />'}
+              {location.pathname === '/'
+                ? 'The Internet Home of <JJ_Clements />'
+                : '<JJ_Clements />'}
             </Typography>
 
             <Link to="/" className="nav">
