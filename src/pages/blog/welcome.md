@@ -1,8 +1,14 @@
 ---
-title: Creating Gatsby
-date: '2018-09-16'
+title: Welcome
+date: '2018-10-24'
 cat: 'blog'
 ---
+
+---
+
+This is the first blog post.
+It's a beautiful thing.
+Below is some information about running Gatsby.
 
 ##### Terminal
 

@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const post = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout location={location}>
       <div
         style={{
-          padding: '1rem',
+          padding: '2rem 5rem',
           margin: 0,
           width: '100%',
           backgroundColor: 'white',

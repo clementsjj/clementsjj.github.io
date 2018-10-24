@@ -11,7 +11,25 @@ import mongodb from './mongodb.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
 import html5 from './html5.svg'
+import linux from './linux.svg'
+import apple from './apple.svg'
+import mysql from './mysql.svg'
 
 export {
-    fb, gh, gmail, insta, li, slack, snap, twit, wa, mongodb, nodejs, react, html5
+  fb,
+  gh,
+  gmail,
+  insta,
+  li,
+  slack,
+  snap,
+  twit,
+  wa,
+  mongodb,
+  nodejs,
+  react,
+  html5,
+  linux,
+  apple,
+  mysql,
 }

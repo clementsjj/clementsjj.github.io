@@ -6,7 +6,7 @@ import Homebody from '../components/Homebody/Homebody'
 const AboutPage = ({ location }) => (
   <Layout location={location}>
     <Homebody />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/about-this-site/">About This Page...</Link>
   </Layout>
 )
 

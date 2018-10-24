@@ -1,14 +1,6 @@
 import React, { Component } from 'react'
-import { Pane } from 'evergreen-ui'
-import {
-  react,
-  nodejs,
-  html5,
-  mongodb,
-  linux,
-  apple,
-  mysql,
-} from '../../images/icons'
+import { Pane, Button } from 'evergreen-ui'
+import { Link } from 'gatsby'
 
 export default class Homebody extends Component {
   render() {
@@ -43,18 +35,13 @@ export default class Homebody extends Component {
 
     return (
       <Pane elevation={1} style={outerPaneStyle}>
-        <Pane elevation={4} style={innerPaneStyle}>
+        {/* <Pane elevation={4} style={innerPaneStyle}>
           <Pane style={iconContainer} elevation={2}>
-            <img style={iconStyle} src={react} />
-            <img style={iconStyle} src={nodejs} />
-            <img style={iconStyle} src={mongodb} />
-            <img style={iconStyle} src={html5} />
+            
           </Pane>
           <br />
           <Pane style={iconContainer} elevation={2}>
-            <img style={iconStyle} src={linux} />
-            <img style={iconStyle} src={apple} />
-            <img style={iconStyle} src={mysql} />
+            
           </Pane>
         </Pane>
         <Pane elevation={4} style={innerPaneStyle}>
@@ -64,7 +51,17 @@ export default class Homebody extends Component {
           <h5>University of Wisconsin Ish</h5>
           <h5>New York City Ish</h5>
           <h6>More About Me</h6>
-        </Pane>
+        </Pane> */}
+        <Link to="/my-files" className="nav">
+          <Button style={{ margin: 5 }} color={'primary'}>
+            Website Files
+          </Button>
+        </Link>
+        <Link to="/markdown-files" className="nav">
+          <Button style={{ margin: 5 }} color={'primary'}>
+            Markdown Files
+          </Button>
+        </Link>
       </Pane>
     )
   }

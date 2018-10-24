@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/clementsjj',
   siteMetadata: {
     title: 'Internet Home of JJ Clements',
     description: 'Landing Page for JJ Clements',

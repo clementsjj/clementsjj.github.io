@@ -76,9 +76,22 @@ class Navbar extends Component {
                 About
               </Button>
             </Link>
+            <Link to="/blog" className="nav">
+              <Button
+                style={{ margin: 5 }}
+                color={'primary'}
+                variant={
+                  location.pathname === '/blog' ? 'contained' : 'outlined'
+                }
+              >
+                Blog
+              </Button>
+            </Link>
             <Sidebar />
             <Button
               style={{ margin: 5, marginLeft: 20 }}
+              disabled
+              variant="outlined"
               color="inherit"
               onClick={() => this.setState({ isShown: true })}
             >
