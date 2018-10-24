@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Internet Home of JJ Clements',
+    description: 'Landing Page for JJ Clements',
+    siteUrl: 'https://clementsjj.com',
+    author: 'clementsjj',
+    twitter: 'clementsjj',
+    adsense: '',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,5 +22,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
   ],
 }
