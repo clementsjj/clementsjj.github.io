@@ -51,6 +51,7 @@ export default class Homebody extends Component {
             <img style={iconStyle} src={html5} />
           </Pane>
           <br />
+          <br />
           <Pane style={iconContainer} elevation={2}>
             <img style={iconStyle} src={linux} />
             <img style={iconStyle} src={apple} />
