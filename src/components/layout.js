@@ -8,9 +8,13 @@ import { siteMetadata } from '../../gatsby-config'
 
 export default class Layout extends Component {
   render() {
-    const { children } = this.props
+    const { children, color } = this.props
+
+    const style = {
+      backgroundColor: color,
+    }
     return (
-      <div>
+      <div style={style}>
         <Helmet
           title={'Internet Home of JJ'}
           meta={[
@@ -19,6 +23,7 @@ export default class Layout extends Component {
           ]}
         >
           <html lang="en" />
+          <style>{`body { background-color: ${color}; }`}</style>
         </Helmet>
         <Navbar {...this.props} />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}

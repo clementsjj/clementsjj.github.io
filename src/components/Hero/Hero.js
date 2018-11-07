@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 //import manhattan from "../../images/manhattan-looking-towards-les.jpg"
 import manhattanbw from '../../images/nycbw.jpg'
-import { fb, gh, gmail, insta, li, snap, twit, wa } from '../../images/icons'
 import {
   github,
   instagram,

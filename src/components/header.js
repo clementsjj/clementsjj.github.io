@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import {Pane} from 'evergreen-ui';
+import { Pane } from 'evergreen-ui'
 
 const style = {
   display: 'flex',
   flexDirection: 'row',
-  jusitifyContent: 'space-around'
+  jusitifyContent: 'space-around',
 }
 const Header = ({ siteTitle }) => (
   <div
@@ -33,9 +33,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div> */}
-    <Pane style={style}>
-      Hey
-    </Pane>
+    {/* <Pane style={style}>Hey</Pane> */}
   </div>
 )
 
