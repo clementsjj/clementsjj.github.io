@@ -1,9 +1,9 @@
 module.exports = {
-  pathPrefix: '/clementsjj',
+  pathPrefix: '/',
   siteMetadata: {
     title: 'Internet Home of JJ Clements',
     description: 'Landing Page for JJ Clements',
-    siteUrl: 'https://clementsjj.com',
+    siteUrl: 'https://www.clementsjj.com',
     author: 'clementsjj',
     twitter: 'clementsjj',
     adsense: '',
