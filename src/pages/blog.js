@@ -33,8 +33,9 @@ export default ({ data, location }) => {
             {/* <hr /> */}
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
             <hr style={{ width: '20%' }} />
-            {data.allMarkdownRemark.edges.map(({ node }) => (
+            {data.allMarkdownRemark.edges.map(({ node }, index) => (
               <Link
+                key={index}
                 to={node.fields.slug}
                 style={{ textDecoration: 'none', color: 'inherit' }}
               >

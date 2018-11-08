@@ -28,21 +28,20 @@ function Aboutaccoridion(props) {
           <Typography>
             My name is JJ Clements, and I love computers. My life summed up in
             bullet points:
-            <ol>
-              <br />
-              <li>Grew up an Army brat</li>
-              <li>
-                Graduated from the University of Wisconsin-Madison. Go Badgers!
-              </li>
-              <li>
-                Commissioned in the Army after graduation. Went to Ranger
-                School, deployed twice to Afghanistan with the 101st Airborne
-                Division, spent 2 amazing years living in Seoul, and now I'm
-                free.
-              </li>
-              <li>Pursuing computer stuff</li>
-            </ol>
           </Typography>
+          <ol>
+            <br />
+            <li>Grew up an Army brat</li>
+            <li>
+              Graduated from the University of Wisconsin-Madison. Go Badgers!
+            </li>
+            <li>
+              Commissioned in the Army after graduation. Went to Ranger School,
+              deployed twice to Afghanistan with the 101st Airborne Division,
+              spent 2 amazing years living in Seoul, and now I'm free.
+            </li>
+            <li>Pursuing computer stuff</li>
+          </ol>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
@@ -52,13 +51,11 @@ function Aboutaccoridion(props) {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            <ol>
-              <li>Zhu</li>
-              <li>Jan Blomqvist</li>
-              <li>Zimmer</li>
-            </ol>
-          </Typography>
+          <ol>
+            <li>Zhu</li>
+            <li>Jan Blomqvist</li>
+            <li>Zimmer</li>
+          </ol>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

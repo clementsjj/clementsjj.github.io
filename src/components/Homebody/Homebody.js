@@ -67,9 +67,7 @@ export default class Homebody extends Component {
         <Pane elevation={4} style={innerPaneStyle}>
           <h2>Skills</h2>
 
-          <h4 textAlign="center" style={{ margin: 0, padding: 0 }}>
-            What I Know {'&'} Love
-          </h4>
+          <h4 style={{ margin: 0, padding: 0 }}>What I Know {'&'} Love</h4>
           <Pane style={iconContainer} elevation={2}>
             <img style={iconStyle} src={react} />
             <img style={iconStyle} src={redux} />
@@ -78,19 +76,14 @@ export default class Homebody extends Component {
             <img style={iconStyle} src={html5} />
           </Pane>
 
-          <h4
-            textAlign="center"
-            style={{ margin: 0, padding: 0, marginTop: 50 }}
-          >
+          <h4 style={{ margin: 0, padding: 0, marginTop: 50 }}>
             -Familiar With-
           </h4>
           <Pane style={iconContainer} elevation={2}>
             <img style={iconStyle} src={mysql} />
             <img style={iconStyle} src={php} />
           </Pane>
-          <h4 textAlign="center" style={{ margin: 0, padding: 0 }}>
-            -Comfortable With-
-          </h4>
+          <h4 style={{ margin: 0, padding: 0 }}>-Comfortable With-</h4>
           <Pane style={iconContainer} elevation={2}>
             <img style={iconStyle} src={linux} />
             <img style={iconStyle} src={apple} />
@@ -99,7 +92,7 @@ export default class Homebody extends Component {
           </Pane>
         </Pane>
         <Pane elevation={4} style={innerPaneStyle}>
-          <h2 textAlign="center">Brief Introduction</h2>
+          <h2>Brief Introduction</h2>
           <Pane
             style={{
               display: 'flex',
