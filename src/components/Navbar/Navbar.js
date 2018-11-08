@@ -25,6 +25,7 @@ const styles = theme => ({
   },
   title: {
     display: 'block',
+    fontFamily: 'Heletica',
     fontSize: '.7rem',
     [theme.breakpoints.up('sm')]: { display: 'block', fontSize: '1.5rem' },
   },
@@ -85,7 +86,7 @@ class Navbar extends Component {
               style={{ margin: 5 }}
               className={classes.grow}
               color={'primary'}
-              variant='outlined'
+              variant="outlined"
               //variant={location.pathname === '/' ? 'contained' : 'outlined'}
             >
               Home
@@ -98,7 +99,7 @@ class Navbar extends Component {
               className={classes.grow}
               style={{ margin: 5 }}
               color={'primary'}
-              variant='outlined'
+              variant="outlined"
               // variant={
               //   location.pathname === '/about' ? 'contained' : 'outlined'
               // }
@@ -112,7 +113,7 @@ class Navbar extends Component {
             <Button
               style={{ margin: 5 }}
               color={'primary'}
-              variant='outlined'
+              variant="outlined"
               // variant={location.pathname === '/blog' ? 'contained' : 'outlined'}
             >
               Blog
@@ -129,9 +130,10 @@ class Navbar extends Component {
         <AppBar position="static">
           <Toolbar style={styleColor}>
             <Typography variant="h5" color="inherit" className={classes.title}>
-              {location.pathname === '/'
+              {'{JJ_Clements}'}
+              {/* {location.pathname === '/'
                 ? 'The Internet Home of { JJ_Clements }'
-                : '{ JJ_Clements }'}
+                : '{ JJ_Clements }'} */}
             </Typography>
 
             <div className={classes.grow} />
@@ -141,7 +143,12 @@ class Navbar extends Component {
                   style={{ margin: 5 }}
                   className={classes.grow}
                   color={'primary'}
-                  variant={location.pathname === '/' ? 'contained' : 'outlined'}
+                  variant="outlined"
+                  // variant={
+                  //   this.props.location.pathname === '/'
+                  //     ? 'contained'
+                  //     : 'outlined'
+                  // }
                 >
                   Home
                 </Button>
@@ -151,9 +158,10 @@ class Navbar extends Component {
                   className={classes.grow}
                   style={{ margin: 5 }}
                   color={'primary'}
-                  variant={
-                    location.pathname === '/about' ? 'contained' : 'outlined'
-                  }
+                  variant="outlined"
+                  // variant={
+                  //   location.pathname === '/about' ? 'contained' : 'outlined'
+                  // }
                 >
                   About
                 </Button>
@@ -162,9 +170,10 @@ class Navbar extends Component {
                 <Button
                   style={{ margin: 5 }}
                   color={'primary'}
-                  variant={
-                    location.pathname === '/blog' ? 'contained' : 'outlined'
-                  }
+                  variant="outlined"
+                  // variant={
+                  //   location.pathname === '/blog' ? 'contained' : 'outlined'
+                  // }
                 >
                   Blog
                 </Button>
