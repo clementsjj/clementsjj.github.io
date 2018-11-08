@@ -85,7 +85,8 @@ class Navbar extends Component {
               style={{ margin: 5 }}
               className={classes.grow}
               color={'primary'}
-              variant={location.pathname === '/' ? 'contained' : 'outlined'}
+              variant='outlined'
+              //variant={location.pathname === '/' ? 'contained' : 'outlined'}
             >
               Home
             </Button>
@@ -97,9 +98,10 @@ class Navbar extends Component {
               className={classes.grow}
               style={{ margin: 5 }}
               color={'primary'}
-              variant={
-                location.pathname === '/about' ? 'contained' : 'outlined'
-              }
+              variant='outlined'
+              // variant={
+              //   location.pathname === '/about' ? 'contained' : 'outlined'
+              // }
             >
               About
             </Button>
@@ -110,7 +112,8 @@ class Navbar extends Component {
             <Button
               style={{ margin: 5 }}
               color={'primary'}
-              variant={location.pathname === '/blog' ? 'contained' : 'outlined'}
+              variant='outlined'
+              // variant={location.pathname === '/blog' ? 'contained' : 'outlined'}
             >
               Blog
             </Button>
