@@ -8,7 +8,9 @@ import HomebodyTwo from '../components/Homebody/HomebodyTwo'
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <Hero />
+    <br />
     <Homebody />
+    <br />
     <HomebodyTwo />
   </Layout>
 )

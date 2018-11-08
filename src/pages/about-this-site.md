@@ -1,6 +1,7 @@
 ---
-title: "About This Website"
-date: "2018-09-16"
+title: 'About This Website'
+date: '2018-09-16'
+cat: 'page'
 ---
 
 ---

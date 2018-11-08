@@ -29,7 +29,7 @@ const styles = theme => ({
   },
   title: {
     display: 'block',
-    fontFamily: 'Heletica',
+    fontFamily: 'Lato',
     fontSize: '.7rem',
     [theme.breakpoints.up('sm')]: { display: 'block', fontSize: '1.5rem' },
   },
