@@ -11,6 +11,10 @@ import IconButton from '@material-ui/core/IconButton'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import './navbar.css'
 
+// let window = {}
+// window.location = {}
+// window.location.pathname = '/'
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -44,14 +48,22 @@ const styleColor = {
   //backgroundColor: '#1f8714',
   backgroundColor: '#00008b',
 }
+//let path = this.props.location ? this.props.location.pathname : '/'
 
 class Navbar extends Component {
-  state = {
-    isShown: false,
-    selectedIndex: 0,
-    anchorEl: null,
-    mobileMoreAnchorEl: null,
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isShown: false,
+      selectedIndex: 0,
+      anchorEl: null,
+      mobileMoreAnchorEl: null,
+      path: '/',
+    }
   }
+
+  handlePageNavigation() {}
 
   handleMenuClose = () => {
     this.setState({ anchorEl: null })
@@ -66,12 +78,25 @@ class Navbar extends Component {
     this.setState({ mobileMoreAnchorEl: null })
   }
 
+  componentDidMount() {
+    // console.log('Navbar Props: ', this.props)
+    //console.log(`Navbar Location: `, this.props.location)
+    //console.log(`Navbar Location.pathname: `, this.props.location.pathname)
+    console.log(`Window.location.pathname: `, window.location)
+  }
+
   render() {
+    //let location = {}
+    //location.pathname = '/'
+
+    //console.log('Default Location: ', location)
     const { classes } = this.props
     const { location } = this.props
+    //console.log('New Location :', location)
+
     const { anchorEl, mobileMoreAnchorEl } = this.state
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
-
+    //console.log('Location-Navbar-Render: ', location)
     const renderMobileMenu = (
       <Menu
         anchorEl={mobileMoreAnchorEl}
@@ -123,8 +148,6 @@ class Navbar extends Component {
       </Menu>
     )
 
-    console.log('Navbar Props: ', this.props)
-    console.log(`Navbar Location: `, location)
     return (
       <div className={classes.root}>
         <AppBar position="static">
@@ -143,12 +166,19 @@ class Navbar extends Component {
                   style={{ margin: 5 }}
                   className={classes.grow}
                   color={'primary'}
-                  variant="outlined"
+                  //variant="outlined"
                   // variant={
-                  //   this.props.location.pathname === '/'
+                  //   window != undefined && window.location.pathname === '/'
                   //     ? 'contained'
                   //     : 'outlined'
                   // }
+                  variant={
+                    typeof window !== 'undefined' &&
+                    window.location.pathname == '/'
+                      ? 'contained'
+                      : 'outlined'
+                  }
+                  onClick={this.handlePageNavigation}
                 >
                   Home
                 </Button>
@@ -158,10 +188,14 @@ class Navbar extends Component {
                   className={classes.grow}
                   style={{ margin: 5 }}
                   color={'primary'}
-                  variant="outlined"
-                  // variant={
-                  //   location.pathname === '/about' ? 'contained' : 'outlined'
-                  // }
+                  //variant="outlined"
+                  variant={
+                    typeof window !== 'undefined' &&
+                    window.location.pathname == '/about'
+                      ? 'contained'
+                      : 'outlined'
+                  }
+                  onClick={this.handlePageNavigation}
                 >
                   About
                 </Button>
@@ -170,10 +204,12 @@ class Navbar extends Component {
                 <Button
                   style={{ margin: 5 }}
                   color={'primary'}
-                  variant="outlined"
-                  // variant={
-                  //   location.pathname === '/blog' ? 'contained' : 'outlined'
-                  // }
+                  variant={
+                    typeof window !== 'undefined' &&
+                    window.location.pathname == '/blog'
+                      ? 'contained'
+                      : 'outlined'
+                  }
                 >
                   Blog
                 </Button>

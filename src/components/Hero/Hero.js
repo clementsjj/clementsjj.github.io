@@ -46,12 +46,27 @@ export default class Hero extends Component {
     return (
       <div style={style}>
         <div style={container}>
-          <img style={iconStyle} className={'icon'} src={github} />
-          <img style={iconStyle} className={'icon'} src={linkedin} />
-          <img style={iconStyle} className={'icon'} src={twitter} />
-          <img style={iconStyle} className={'icon'} src={instagram} />
-          <img style={iconStyle} className={'icon'} src={slack} />
-          <img style={iconStyle} className={'icon'} src={venmo} />
+          <img style={iconStyle} className={'icon'} src={github} alt="github" />
+          <img
+            style={iconStyle}
+            className={'icon'}
+            src={linkedin}
+            alt="linkedin"
+          />
+          <img
+            style={iconStyle}
+            className={'icon'}
+            src={twitter}
+            alt="twitter"
+          />
+          <img
+            style={iconStyle}
+            className={'icon'}
+            src={instagram}
+            alt="instagram"
+          />
+          <img style={iconStyle} className={'icon'} src={slack} alt="slack" />
+          <img style={iconStyle} className={'icon'} src={venmo} alt="venmo" />
         </div>
       </div>
     )

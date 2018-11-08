@@ -69,26 +69,26 @@ export default class Homebody extends Component {
 
           <h4 style={{ margin: 0, padding: 0 }}>What I Know {'&'} Love</h4>
           <Pane style={iconContainer} elevation={2}>
-            <img style={iconStyle} src={react} />
-            <img style={iconStyle} src={redux} />
-            <img style={iconStyle} src={nodejs} />
-            <img style={iconStyle} src={mongodb} />
-            <img style={iconStyle} src={html5} />
+            <img style={iconStyle} src={react} alt="react" />
+            <img style={iconStyle} src={redux} alt="redux" />
+            <img style={iconStyle} src={nodejs} alt="nodejs" />
+            <img style={iconStyle} src={mongodb} alt="mongodb" />
+            <img style={iconStyle} src={html5} alt="html5" />
           </Pane>
 
           <h4 style={{ margin: 0, padding: 0, marginTop: 50 }}>
             -Familiar With-
           </h4>
           <Pane style={iconContainer} elevation={2}>
-            <img style={iconStyle} src={mysql} />
-            <img style={iconStyle} src={php} />
+            <img style={iconStyle} src={mysql} alt="mysql" />
+            <img style={iconStyle} src={php} alt="php" />
           </Pane>
           <h4 style={{ margin: 0, padding: 0 }}>-Comfortable With-</h4>
           <Pane style={iconContainer} elevation={2}>
-            <img style={iconStyle} src={linux} />
-            <img style={iconStyle} src={apple} />
-            <img style={iconStyle} src={windows} />
-            <img style={iconStyle} src={android} />
+            <img style={iconStyle} src={linux} alt="linux" />
+            <img style={iconStyle} src={apple} alt="apple" />
+            <img style={iconStyle} src={windows} alt="windows" />
+            <img style={iconStyle} src={android} alt="android" />
           </Pane>
         </Pane>
         <Pane elevation={4} style={innerPaneStyle}>
@@ -103,7 +103,11 @@ export default class Homebody extends Component {
             }}
             elevation={2}
           >
-            <img style={iconStyleTwo} src={programmingsvg} />
+            <img
+              style={iconStyleTwo}
+              src={programmingsvg}
+              alt="prgrammingsvg"
+            />
             Fullstack Engineer{' '}
           </Pane>
           <Pane style={iconContainer} elevation={2}>
@@ -117,7 +121,7 @@ export default class Homebody extends Component {
               }}
               elevation={2}
             >
-              <img style={iconStyleTwo} src={usarmy} />
+              <img style={iconStyleTwo} src={usarmy} alt="usarmy" />
               Army Veteran
             </Pane>
 
@@ -131,7 +135,7 @@ export default class Homebody extends Component {
               }}
               elevation={2}
             >
-              <img style={iconStyleTwo} src={motionw} />
+              <img style={iconStyleTwo} src={motionw} alt="motionw" />
               Wisconsin Alum
             </Pane>
 
@@ -145,7 +149,11 @@ export default class Homebody extends Component {
               }}
               elevation={2}
             >
-              <img style={iconStyleTwo} src={chryslerbuilding} />
+              <img
+                style={iconStyleTwo}
+                src={chryslerbuilding}
+                alt="chryslerbuilding"
+              />
               Resides in New York City
             </Pane>
           </Pane>
