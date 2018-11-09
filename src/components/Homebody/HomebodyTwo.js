@@ -1,8 +1,34 @@
 import React, { Component } from 'react'
-import { Pane, Button } from 'evergreen-ui'
-import { Link } from 'gatsby'
+import {
+  Grid,
+  Segment,
+  Responsive,
+  Card,
+  Image,
+  Container,
+  Header,
+} from 'semantic-ui-react'
+import {
+  react,
+  nodejs,
+  html5,
+  mongodb,
+  linux,
+  apple,
+  mysql,
+  redux,
+  windows,
+  android,
+  php,
+} from '../../images/icons/tech'
+import {
+  usarmy,
+  motionw,
+  chryslerbuilding,
+  programmingsvg,
+} from '../../images/icons/other'
 
-export default class Homebody extends Component {
+export default class HomebodyTwo extends Component {
   render() {
     const outerPaneStyle = {
       display: 'flex',
@@ -11,8 +37,8 @@ export default class Homebody extends Component {
     }
     const innerPaneStyle = {
       width: '40vw',
-      height: '40vh',
-      //border: '1px solid blue',
+      minHeight: '40vh',
+      border: '1px solid #00008b',
       elevation: 2,
       margin: 20,
       padding: 20,
@@ -21,48 +47,90 @@ export default class Homebody extends Component {
       justifyContent: 'center',
       alignItems: 'center',
     }
+
     const iconContainer = {
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'center',
       alignItems: 'center',
+      margin: 10,
     }
+
     const iconStyle = {
       height: 50,
       width: 'auto',
       margin: 10,
     }
 
+    const iconStyleTwo = {
+      width: 'auto',
+      height: 100,
+      padding: 0,
+      display: 'block',
+      margin: 'auto',
+    }
+
     return (
-      <Pane elevation={1} style={outerPaneStyle}>
-        {/* <Pane elevation={4} style={innerPaneStyle}>
-          <Pane style={iconContainer} elevation={2}>
-            
-          </Pane>
-          <br />
-          <Pane style={iconContainer} elevation={2}>
-            
-          </Pane>
-        </Pane>
-        <Pane elevation={4} style={innerPaneStyle}>
-          <h2>Brief Ish About Me</h2>
-          <h5>Fullstack Ish</h5>
-          <h5>Veteran Ish</h5>
-          <h5>University of Wisconsin Ish</h5>
-          <h5>New York City Ish</h5>
-          <h6>More About Me</h6>
-        </Pane> */}
-        <Link to="/my-files" className="nav">
-          <Button style={{ margin: 5 }} color={'primary'}>
-            Website Files
-          </Button>
-        </Link>
-        <Link to="/markdown-files" className="nav">
-          <Button style={{ margin: 5 }} color={'primary'}>
-            Markdown Files
-          </Button>
-        </Link>
-      </Pane>
+      <Grid stackable padded={false}>
+        <Grid.Row
+          centered
+          columns={2}
+          verticalAlign={'middle'}
+          style={{ backgroundColor: '#FFFFFF', padding: 10 + 'px' }}
+        >
+          <Grid.Column verticalAlign={'middle'}>
+            <Container fluid textAlign="center">
+              <Card fluid>
+                <Card.Header>
+                  <h3 style={{ color: 'black' }}>--What I Know and Love--</h3>
+                </Card.Header>
+                <Card.Content>
+                  <img style={iconStyle} src={react} alt="react" />
+                  <img style={iconStyle} src={redux} alt="redux" />
+                  <img style={iconStyle} src={nodejs} alt="nodejs" />
+                  <img style={iconStyle} src={mongodb} alt="mongodb" />
+                  <img style={iconStyle} src={html5} alt="html5" />
+                </Card.Content>
+              </Card>
+              <Card fluid>
+                <Card.Header>
+                  <h5>--Familiar With--</h5>
+                </Card.Header>
+                <Card.Content>
+                  <img style={iconStyle} src={mysql} alt="mysql" />
+                  <img style={iconStyle} src={php} alt="php" />
+                </Card.Content>
+              </Card>
+              <Card fluid>
+                <Card.Header>
+                  <h5>--Operating Systems--</h5>
+                </Card.Header>
+                <Card.Content>
+                  <img style={iconStyle} src={linux} alt="linux" />
+                  <img style={iconStyle} src={apple} alt="apple" />
+                  <img style={iconStyle} src={windows} alt="windows" />
+                  <img style={iconStyle} src={android} alt="android" />
+                </Card.Content>
+              </Card>
+            </Container>
+          </Grid.Column>
+          <Grid.Column style={{ margin: 0 }}>
+            <Container
+              text
+              fluid
+              textAlign="center"
+              style={{ backgroundColor: 'white', borderRadius: 20 }}
+            >
+              I really dig the MERN stack -- MongoDB, Express, React, Node.js
+              <br />
+              <br />I have familiarity with PHP and mySQL. Kinda neat. <br />
+              <br />I primarily work on my Macbook Pro and my home Windows
+              desktop PC (r/pcmasterrace), while I pretend to know about Linux.
+              Android is awesome too. iOS...well, it exists.
+            </Container>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     )
   }
 }
