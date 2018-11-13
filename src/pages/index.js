@@ -12,6 +12,8 @@ const IndexPage = ({ location }) => (
     <br />
     <Homebody />
     <br />
+
+    <br />
     <HomebodyTwo />
     <br />
     <HomebodyThree />
