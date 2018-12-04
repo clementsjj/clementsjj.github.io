@@ -214,6 +214,20 @@ class Navbar extends Component {
                   Blog
                 </Button>
               </Link>
+              <Link to="/projects" className="nav">
+                <Button
+                  style={{ margin: 5 }}
+                  color={'primary'}
+                  variant={
+                    typeof window !== 'undefined' &&
+                    window.location.pathname == '/projects'
+                      ? 'contained'
+                      : 'outlined'
+                  }
+                >
+                  Projects
+                </Button>
+              </Link>
               <Button
                 style={{ margin: 5, marginLeft: 20 }}
                 disabled

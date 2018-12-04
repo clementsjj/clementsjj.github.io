@@ -12,7 +12,7 @@ import {
   Menu,
 } from 'semantic-ui-react'
 
-class blog extends Component {
+class blogclass extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -134,10 +134,10 @@ class blog extends Component {
   }
 }
 
-export default blog
+export default blogclass
 
 export const query = graphql`
-  query BlogQuery {
+  query BlogQueryClass {
     Programming: allMarkdownRemark(
       filter: { frontmatter: { cat: { eq: "Programming" } } }
     ) {

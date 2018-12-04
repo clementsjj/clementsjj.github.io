@@ -5,7 +5,10 @@ module.exports = {
     description: 'Landing Page for JJ Clements',
     siteUrl: 'https://www.clementsjj.com',
     author: 'clementsjj',
-    twitter: 'clementsjj',
+    twitter: 'https://twitter.com/clementsjj',
+    github: 'https://github.com/clementsjj',
+    linkedin: 'https://www.linkedin.com/in/john-clements-084a1811a/',
+    instagram: 'https://www.instagram.com/jj4bucky/',
     adsense: '',
   },
   plugins: [

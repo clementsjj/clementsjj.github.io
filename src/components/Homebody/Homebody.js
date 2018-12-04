@@ -35,6 +35,7 @@ export default class Homebody extends Component {
       display: 'flex',
       margin: 10,
       justifyContent: 'space-around',
+      backgroundColor: '#f0f8ff',
     }
     const innerPaneStyle = {
       width: '40vw',
@@ -78,11 +79,14 @@ export default class Homebody extends Component {
           columns={2}
           // color={'#00008b'}
           verticalAlign={'middle'}
-          style={{ backgroundColor: 'white', color: 'black' }}
+          style={{ backgroundColor: '#f0f8ff', color: 'black' }}
         >
           <Grid.Column verticalAlign={'middle'}>
             <Container fluid textAlign="center">
-              <Card style={{ margin: '0 auto', backgroundColor: 'white' }}>
+              <Card
+                raised
+                style={{ margin: '0 auto', backgroundColor: 'white' }}
+              >
                 <Card.Header>
                   <h3>Fullstack Engineer</h3>
                 </Card.Header>
@@ -93,7 +97,14 @@ export default class Homebody extends Component {
 
           <Grid.Column>
             <Container fluid textAlign="center">
-              <Card style={{ margin: '0 auto', backgroundColor: 'white' }}>
+              <Card
+                raised
+                style={{
+                  margin: '0 auto',
+                  marginBottom: 10,
+                  backgroundColor: 'white',
+                }}
+              >
                 <Card.Header>
                   <h4>Army Veteran</h4>
                 </Card.Header>
@@ -102,7 +113,14 @@ export default class Homebody extends Component {
                 </Card.Content>
               </Card>
 
-              <Card style={{ margin: '0 auto', backgroundColor: 'white' }}>
+              <Card
+                raised
+                style={{
+                  margin: '0 auto',
+                  marginBottom: 10,
+                  backgroundColor: 'white',
+                }}
+              >
                 <Card.Header>
                   <h4>University of Wisconsin Alumnus</h4>
                 </Card.Header>
@@ -111,9 +129,12 @@ export default class Homebody extends Component {
                 </Card.Content>
               </Card>
 
-              <Card style={{ margin: '0 auto', backgroundColor: 'white' }}>
+              <Card
+                raised
+                style={{ margin: '0 auto', backgroundColor: 'white' }}
+              >
                 <Card.Header>
-                  <h4>Resides in New York City</h4>
+                  <h4>New York City Resident</h4>
                 </Card.Header>{' '}
                 <Card.Content>
                   <img

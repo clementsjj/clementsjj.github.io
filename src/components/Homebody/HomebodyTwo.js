@@ -76,34 +76,76 @@ export default class HomebodyTwo extends Component {
           centered
           columns={2}
           verticalAlign={'middle'}
-          style={{ backgroundColor: '#FFFFFF', padding: 10 + 'px' }}
+          style={{ backgroundColor: '#f0f8ff', padding: 10 + 'px' }}
         >
           <Grid.Column verticalAlign={'middle'}>
+            <Card fluid>
+              <Card.Header>
+                <h3 style={{ color: 'black' }}>-What I Know and Love-</h3>
+              </Card.Header>
+              <Card.Content>
+                <img style={iconStyle} src={react} alt="react" />
+                <img style={iconStyle} src={redux} alt="redux" />
+                <img style={iconStyle} src={nodejs} alt="nodejs" />
+                <img style={iconStyle} src={mongodb} alt="mongodb" />
+                <img style={iconStyle} src={html5} alt="html5" />
+              </Card.Content>
+            </Card>
+          </Grid.Column>
+
+          <Grid.Column style={{ margin: 0 }}>
+            <Container
+              text
+              fluid
+              textAlign="center"
+              style={{ backgroundColor: '#f0f8ff', borderRadius: 20 }}
+            >
+              I really dig the MERN stack -- MongoDB, Express, React, Node.js
+            </Container>
+          </Grid.Column>
+        </Grid.Row>
+
+        <Grid.Row
+          centered
+          columns={2}
+          verticalAlign={'middle'}
+          style={{ backgroundColor: '#f0f8ff', padding: 10 + 'px' }}
+        >
+          <Grid.Column verticalAlign={'middle'}>
+            <Card fluid>
+              <Card.Header>
+                <h4>--Familiar With--</h4>
+              </Card.Header>
+              <Card.Content>
+                <img style={iconStyle} src={mysql} alt="mysql" />
+                <img style={iconStyle} src={php} alt="php" />
+              </Card.Content>
+            </Card>
+          </Grid.Column>
+
+          <Grid.Column style={{ margin: 0 }}>
+            <Container
+              text
+              fluid
+              textAlign="center"
+              style={{ backgroundColor: '#f0f8ff', borderRadius: 20 }}
+            >
+              I have familiarity with PHP and mySQL. Kinda neat.{' '}
+            </Container>
+          </Grid.Column>
+        </Grid.Row>
+
+        {/* <Grid.Row
+          centered
+          columns={2}
+          verticalAlign={'middle'}
+          style={{ backgroundColor: '#FFFFFF', padding: 10 + 'px' }}
+        > */}
+        {/* <Grid.Column verticalAlign={'middle'}>
             <Container fluid textAlign="center">
               <Card fluid>
                 <Card.Header>
-                  <h3 style={{ color: 'black' }}>--What I Know and Love--</h3>
-                </Card.Header>
-                <Card.Content>
-                  <img style={iconStyle} src={react} alt="react" />
-                  <img style={iconStyle} src={redux} alt="redux" />
-                  <img style={iconStyle} src={nodejs} alt="nodejs" />
-                  <img style={iconStyle} src={mongodb} alt="mongodb" />
-                  <img style={iconStyle} src={html5} alt="html5" />
-                </Card.Content>
-              </Card>
-              <Card fluid>
-                <Card.Header>
-                  <h5>--Familiar With--</h5>
-                </Card.Header>
-                <Card.Content>
-                  <img style={iconStyle} src={mysql} alt="mysql" />
-                  <img style={iconStyle} src={php} alt="php" />
-                </Card.Content>
-              </Card>
-              <Card fluid>
-                <Card.Header>
-                  <h5>--Operating Systems--</h5>
+                  <h5>---Other Things---</h5>
                 </Card.Header>
                 <Card.Content>
                   <img style={iconStyle} src={linux} alt="linux" />
@@ -121,15 +163,12 @@ export default class HomebodyTwo extends Component {
               textAlign="center"
               style={{ backgroundColor: 'white', borderRadius: 20 }}
             >
-              I really dig the MERN stack -- MongoDB, Express, React, Node.js
-              <br />
-              <br />I have familiarity with PHP and mySQL. Kinda neat. <br />
-              <br />I primarily work on my Macbook Pro and my home Windows
-              desktop PC (r/pcmasterrace), while I pretend to know about Linux.
-              Android is awesome too. iOS...well, it exists.
+              I primarily work on my Macbook Pro and my home Windows desktop PC
+              (r/pcmasterrace), while I pretend to know about Linux. Android is
+              awesome too. iOS...well, it exists.
             </Container>
-          </Grid.Column>
-        </Grid.Row>
+          </Grid.Column> */}
+        {/* </Grid.Row> */}
       </Grid>
     )
   }

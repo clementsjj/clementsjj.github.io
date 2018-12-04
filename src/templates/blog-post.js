@@ -24,7 +24,7 @@ export default ({ data, location }) => {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             {/* </div> */}
             {typeof window !== 'undefined' &&
-            window.location.pathname == '/about-this-site/' ? (
+            window.location.pathname === '/about-this-site/' ? (
               <HomebodyTwo />
             ) : (
               'Nothing to Display'

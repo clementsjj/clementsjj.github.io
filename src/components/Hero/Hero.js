@@ -19,7 +19,7 @@ export default class Hero extends Component {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       width: '100vw',
-      height: '20vh',
+      height: '40vh',
       //border: "5px solid #00008b",
       padding: 0,
       margin: 0,
@@ -46,27 +46,44 @@ export default class Hero extends Component {
     return (
       <div style={style}>
         <div style={container}>
-          <img style={iconStyle} className={'icon'} src={github} alt="github" />
-          <img
-            style={iconStyle}
-            className={'icon'}
-            src={linkedin}
-            alt="linkedin"
-          />
-          <img
-            style={iconStyle}
-            className={'icon'}
-            src={twitter}
-            alt="twitter"
-          />
-          <img
-            style={iconStyle}
-            className={'icon'}
-            src={instagram}
-            alt="instagram"
-          />
-          <img style={iconStyle} className={'icon'} src={slack} alt="slack" />
-          <img style={iconStyle} className={'icon'} src={venmo} alt="venmo" />
+          <a href="https://github.com/clementsjj" target="_blank">
+            <img
+              style={iconStyle}
+              className={'icon'}
+              src={github}
+              alt="github"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/john-clements-084a1811a/"
+            target="_blank"
+          >
+            <img
+              style={iconStyle}
+              className={'icon'}
+              src={linkedin}
+              alt="linkedin"
+            />
+          </a>
+          <a href="https://twitter.com/clementsjj" target="_blank">
+            <img
+              style={iconStyle}
+              className={'icon'}
+              src={twitter}
+              alt="twitter"
+            />
+          </a>
+          <a href="https://www.instagram.com/jj4bucky/" target="_blank">
+            <img
+              style={iconStyle}
+              className={'icon'}
+              src={instagram}
+              alt="instagram"
+            />
+          </a>
+
+          {/* <img style={iconStyle} className={'icon'} src={slack} alt="slack" />
+          <img style={iconStyle} className={'icon'} src={venmo} alt="venmo" /> */}
         </div>
       </div>
     )
