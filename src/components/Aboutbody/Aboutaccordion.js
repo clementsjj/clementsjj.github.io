@@ -25,12 +25,8 @@ function Aboutaccoridion(props) {
           <Typography className={classes.heading}>About Me</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-            My name is JJ Clements, and I love computers. My life summed up in
-            bullet points:
-          </Typography>
           <ol>
-            <br />
+            <li>My name is JJ Clements, and I love computers.</li>
             <li>Grew up an Army brat</li>
             <li>
               Graduated from the University of Wisconsin-Madison. Go Badgers!
