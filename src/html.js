@@ -21,6 +21,8 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"
           />
+
+          <script src="https://cdnjs.buttercms.com/buttercms-1.1.3.min.js" />
           {/* <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"

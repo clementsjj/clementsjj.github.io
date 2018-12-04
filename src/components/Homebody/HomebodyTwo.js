@@ -79,7 +79,7 @@ export default class HomebodyTwo extends Component {
           style={{ backgroundColor: '#f0f8ff', padding: 10 + 'px' }}
         >
           <Grid.Column verticalAlign={'middle'}>
-            <Card fluid>
+            <Card fluid raised>
               <Card.Header>
                 <h3 style={{ color: 'black' }}>-What I Know and Love-</h3>
               </Card.Header>
@@ -112,7 +112,7 @@ export default class HomebodyTwo extends Component {
           style={{ backgroundColor: '#f0f8ff', padding: 10 + 'px' }}
         >
           <Grid.Column verticalAlign={'middle'}>
-            <Card fluid>
+            <Card fluid raised>
               <Card.Header>
                 <h4>--Familiar With--</h4>
               </Card.Header>

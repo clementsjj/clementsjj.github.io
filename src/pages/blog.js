@@ -61,7 +61,12 @@ class blog extends Component {
                       active={this.state.activeItem === 'All'}
                       onClick={this.handleCategoryClick}
                     />
-                    {data.All.edges.map(({ node }, index) => {
+                    <Menu.Item
+                      name="Programming"
+                      active={this.state.activeItem === 'Programming'}
+                      onClick={this.handleCategoryClick}
+                    />
+                    {/* {data.All.edges.map(({ node }, index) => {
                       if (node.frontmatter.cat !== 'page') {
                         return (
                           <Menu.Item
@@ -73,7 +78,7 @@ class blog extends Component {
                           />
                         )
                       }
-                    })}
+                    })} */}
                   </Menu>
                 </Container>
               </Responsive>
@@ -140,6 +145,7 @@ export const query = graphql`
   query BlogQuery {
     Programming: allMarkdownRemark(
       filter: { frontmatter: { cat: { eq: "Programming" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
       edges {
