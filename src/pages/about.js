@@ -8,6 +8,7 @@ import Aboutaccordion3 from '../components/Aboutbody/Aboutaccordion3'
 import DynamicAccordion from '../components/Aboutbody/DynamicAccordion'
 import gif from '../images/gif/giftest.gif'
 import gifii from '../images/gif/giftestii.gif'
+import psychadeliccat from '../images/gif/psychadeliccat.gif'
 
 const title1 = 'Favorite Cities'
 const title2 = 'Some Subject'
@@ -26,7 +27,10 @@ const AboutPage = ({ location }) => (
         </Grid.Column>
         <Grid.Column width={4}>
           {/* <Container> */}
-          <Image src={gif} style={{ width: 250, margin: '0 auto' }} />
+          <Image
+            src={psychadeliccat}
+            style={{ width: 250, margin: '0 auto' }}
+          />
           {/* </Container> */}
         </Grid.Column>
         <Grid.Column width={6}>

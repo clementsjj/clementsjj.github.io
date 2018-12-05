@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Butter from 'buttercms'
-import { Card, Container, Tab, Grid, Segment } from 'semantic-ui-react'
+import { Card, Container, Tab, Grid, Segment, Image } from 'semantic-ui-react'
+import loader from '../images/gif/ajax-loader.gif'
 const butter = Butter('5e4558fe4e0400477fda1dfed305974d4c5aff01')
 
 class Gists extends Component {
@@ -100,7 +101,17 @@ class Gists extends Component {
             <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
           </Container>
         ) : (
-          <div>Loading...........................</div>
+          <Container
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <br />
+            <br />
+            <Image src={loader} />
+          </Container>
         )}
       </Layout>
     )
