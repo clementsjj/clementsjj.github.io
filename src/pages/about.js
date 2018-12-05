@@ -62,7 +62,7 @@ const AboutPage = ({ location }) => (
       }}
       section
     />
-    <Container
+    {/* <Container
       fluid
       style={{ display: 'flex', justifyContent: 'space-around' }}
     >
@@ -70,7 +70,7 @@ const AboutPage = ({ location }) => (
       <Image src={gifii} style={{ width: 250 }} />
       <Image src={gifii} style={{ width: 250 }} />
       <Image src={gifii} style={{ width: 250 }} />
-    </Container>
+    </Container> */}
     {/* <Container
       fluid
       style={{ display: 'flex', justifyContent: 'space-around' }}

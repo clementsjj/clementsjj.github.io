@@ -2,12 +2,18 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Grid, Segment } from 'semantic-ui-react'
 import HomebodyTwo from '../components/Homebody/HomebodyTwo'
+import { DiscussionEmbed } from 'disqus-react'
 
 export default ({ data, location }) => {
   const post = data.markdownRemark
+  //const disqusShortname = 'clementsjj.disqus.com'
+  const disqusConfig = {
+    identifier: post.id,
+    title: post.frontmatter.title,
+  }
 
   return (
-    <Layout location={location}>
+    <Layout location={location} color={'#f0f8ff'}>
       <Grid container>
         <Grid.Column>
           <Segment>
@@ -23,13 +29,16 @@ export default ({ data, location }) => {
             <h1>{post.frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             {/* </div> */}
-            {typeof window !== 'undefined' &&
+
+            {/* This is the code for bypassing the Gatsby build */}
+            {/* {typeof window !== 'undefined' &&
             window.location.pathname === '/about-this-site/' ? (
               <HomebodyTwo />
             ) : (
               'Nothing to Display'
-            )}
+            )} */}
           </Segment>
+          <DiscussionEmbed shortname="clementsjj" config={disqusConfig} />
         </Grid.Column>
       </Grid>
     </Layout>
