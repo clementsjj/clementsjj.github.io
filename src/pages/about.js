@@ -14,7 +14,7 @@ const title1 = 'Favorite Cities'
 const title2 = 'Some Subject'
 
 const AboutPage = ({ location }) => (
-  <Layout location={location}>
+  <Layout location={location} color={'#f0f8ff'}>
     {/* <Aboutaccordion2 />
     <Aboutaccordion3 /> */}
     <Link to="/about-this-site/">About This Page...</Link>
