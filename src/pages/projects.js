@@ -9,7 +9,7 @@ const Projects = ({ location }) => (
   <Layout location={location} color={'#f0f8ff'}>
     <Container style={{ display: 'flex', justifyContent: 'space-around' }}>
       <Card
-        href="https://mbdb.netlify.com"
+        href="https://mbdb-beta.netlify.com"
         target="_blank"
         style={{ margin: 10 }}
       >

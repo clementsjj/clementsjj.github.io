@@ -54,10 +54,7 @@ export default class Hero extends Component {
               alt="github"
             />
           </a>
-          <a
-            href="https://www.linkedin.com/in/john-clements-084a1811a/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/clementsjj/" target="_blank">
             <img
               style={iconStyle}
               className={'icon'}
