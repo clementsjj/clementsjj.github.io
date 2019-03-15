@@ -35,28 +35,21 @@ const AboutPage = ({ location }) => (
         </Grid.Column>
         <Grid.Column width={6}>
           <Container>
-            <DynamicAccordion
-              title="Favorite Cities"
-              content={
-                <ol>
-                  <li>New York City</li>
-                  <li>Seoul</li>
-                </ol>
-              }
-            />
-            <DynamicAccordion
-              title="Favorite Coding Schools"
-              content={
-                <ol>
-                  <li>Code Immersives</li>
-                </ol>
-              }
-            />
+            <DynamicAccordion title="Favorite Cities">
+              <ol>
+                <li>New York City</li>
+                <li>Seoul</li>
+              </ol>
+            </DynamicAccordion>
+            <DynamicAccordion title="Favorite Coding Schools">
+              <ol>
+                <li>Code Immersives</li>
+              </ol>
+            </DynamicAccordion>
           </Container>
         </Grid.Column>
       </Grid.Row>
     </Grid>
-
     <Divider
       style={{
         backgroundColor: '#00008b',
@@ -66,43 +59,38 @@ const AboutPage = ({ location }) => (
       }}
       section
     />
-    {/* <Container
-      fluid
-      style={{ display: 'flex', justifyContent: 'space-around' }}
-    >
-      <Image src={gifii} style={{ width: 250 }} />
-      <Image src={gifii} style={{ width: 250 }} />
-      <Image src={gifii} style={{ width: 250 }} />
-      <Image src={gifii} style={{ width: 250 }} />
-    </Container> */}
-    {/* <Container
-      fluid
-      style={{ display: 'flex', justifyContent: 'space-around' }}
-    >
-      <Aboutaccordion />
-      <Container>
-        <Image src={gif} style={{ width: 250, margin: '0 auto' }} />
-      </Container>
-      <Container>
-        <DynamicAccordion
-          title="Favorite Cities"
-          content={
+
+    <Grid stackable padded={false}>
+      <Grid.Row centered columns={3} verticalAlign={'middle'}>
+        <Grid.Column width={6}>
+          {/* <Container> */}
+          <Image
+            src={psychadeliccat}
+            style={{ width: 250, margin: '0 auto' }}
+          />
+          {/* </Container> */}
+        </Grid.Column>
+        <Grid.Column width={4}>
+          {/* <Container> */}
+          <DynamicAccordion title="Favorite Parks">
             <ol>
-              <li>New York City</li>
-              <li>Seoul</li>
+              <li>Washington Square Park</li>
+              <li>Sara D. Roosevelt Park </li>
+              <li>Hudson River Park </li>
             </ol>
-          }
-        />
-        <DynamicAccordion
-          title="Favorite Coding Schools"
-          content={
-            <ol>
-              <li>Code Immersives</li>
-            </ol>
-          }
-        />
-      </Container>
-    </Container> */}
+          </DynamicAccordion>
+          {/* </Container> */}
+        </Grid.Column>
+        <Grid.Column width={6}>
+          <Container>
+            <Image
+              src={psychadeliccat}
+              style={{ width: 250, margin: '0 auto' }}
+            />
+          </Container>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
   </Layout>
 )
 

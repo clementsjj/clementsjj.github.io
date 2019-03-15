@@ -17,16 +17,14 @@ const styles = theme => ({
 })
 
 function Aboutaccoridion(props) {
-  const { classes, title, content } = props
+  const { classes, title, content, children } = props
   return (
     <div className={classes.root}>
       <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
           <Typography className={classes.heading}> {title} </Typography>
         </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Typography>{content}</Typography>
-        </ExpansionPanelDetails>
+        <ExpansionPanelDetails>{children}</ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
   )
