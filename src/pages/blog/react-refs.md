@@ -9,7 +9,7 @@ subject: 'React'
 ## Preface
 This post will go over a simple solution to using React refs and changing the style of a ref element.
 
-Yesterday I ran into an issue where I wanted to style an <input> element a specific way, and use onMouseOver/onMouseLeave to turn it blue when hovered.
+Yesterday I ran into an issue where I wanted to style an input element a specific way, and use onMouseOver/onMouseLeave to turn it blue when hovered.
 
  was submitting a form with all inputs hidden and its values automatically generated. I had an input of type submit that would send the post request form and redirect to that page's results. 
 
